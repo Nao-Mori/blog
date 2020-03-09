@@ -1,0 +1,9 @@
+.right-block{
+    max-width: 65vw;
+}
+
+@media only screen and (max-width: 550px) {
+    .right-block{
+        max-width: 100vw;
+    }
+}
