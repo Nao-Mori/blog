@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          backgroundColor:"rgb(243,240,240)",
+          background: "radial-gradient(rgb(225,220,220),rgb(255,250,250))",
           paddingTop: `5.45rem`,
         }}
       >

@@ -1,6 +1,14 @@
 .right-block{
     max-width: 65vw;
 }
+.article{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.article:hover{
+    background-color: rgb(236, 235, 231);
+}
 
 @media only screen and (max-width: 550px) {
     .right-block{
