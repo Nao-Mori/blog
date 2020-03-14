@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          background: "radial-gradient(rgb(215,210,215),rgb(255,250,250))",
+          background: "radial-gradient(rgb(235,230,235),rgb(255,252,252))",
           paddingTop: `5.45rem`,
         }}
       >
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         </Helmet>
         <main style={{minHeight:"95vh"}}>{children}</main>
         <footer style={{padding:"20px", backgroundColor:"rgba(0,0,0,0.3)", textAlign:"center"}}>
-         <h4 style={{ margin:"0", color: "white", fontFamily:"cursive", }}>©Nao Mori {new Date().getFullYear()}</h4>
+         <h4 style={{ margin:"0", color: "white" }}>©Nao Mori {new Date().getFullYear()}</h4>
         </footer>
       </div>
     </>

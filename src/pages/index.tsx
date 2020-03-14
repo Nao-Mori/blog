@@ -19,23 +19,24 @@ const imgStyle3={width:"128px", margin:"5px auto", boxShadow:"5px 10px 10px rgba
 
 const Articles = [
   {
-      title: "Deal with my ADHD and be productive",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, minima ducimus harum explicabo pariatur eligendi! Modi deserunt tempore quidem accusantium, officiis dolores qui alias a? Doloribus nisi nihil et maxime?",
+      title: "How I Turned my ADHD Tendencies into my Strengths",
+      body: 
+        "There are good days you are so focused and spend the entire day being so productive. However, " +
+        "there are also bad days just being stressed by your tasks and waste your time. " +
+        "How can you make everyday your good day? There are tips to do that.",
       tags: ["ADHD", "productivity", "motivation", "work"],
-      date: "3/12/2020"
+      date: "3/14/2020"
   },
   {
-      title: "Why I choose to live in Germany over Japan",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores hic quod aperiam iure, modi reprehenderit impedit quibusdam odit ab obcaecati. Ut iusto soluta architecto velit eos quis fuga eligendi temporibus!",
+      title: "Why I choose not to live in Japan",
+      body:
+        "I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school. " +
+        "Last year I graduated university and decided to move to Germany this year. " +
+        "Before getting to the point I just want to clarify that I love Japan, " +
+        "and it is one of my favorite cities to travel. If I had to stay in Japan I would still enjoy living there.",
       tags: ["life", "Japan", "Germany", "food", "people"],
       date: "3/4/2020"
-  },
-  {
-      title: "Things I wish I knew before teaching myself how to code",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aliquam natus voluptatem illum beatae non quae neque labore facere delectus ab consectetur illo, asperiores quis quos, eos sapiente atque corporis.",
-      tags: ["coding", "self-teaching", "web"],
-      date: "2/28/2020"
-  },
+  }
 ]
 
 const IndexPage = () => {
@@ -61,7 +62,7 @@ const IndexPage = () => {
           <div style={{minWidth:"300px", padding:"0 10px", display: "flex", flexWrap:"wrap", width:"100%", maxWidth:"1400px"}}>
             {Articles.map((article, key)=>{
               return (
-                <Link  to={`post${key+1}`} key={key} style={{color:"black",textDecoration:"none", margin:"10px auto", padding:"0 5px"}}>
+                <Link  to={`post${Articles.length - key}`} key={key} style={{color:"black",textDecoration:"none", margin:"10px auto", padding:"0 5px"}}>
                 <div
                   className="article"
                   style={{
@@ -75,10 +76,10 @@ const IndexPage = () => {
                     position:"relative"
                   }}
                 >
-                  <h3 style={{fontFamily:"cursive", color:"rgb(60,60,60)", margin: 0}}>{article.title}</h3>
-                  <h6 style={{textAlign:"right", fontFamily:"cursive", margin:"10px 0", color:"gray"}}>{article.date}</h6>
-                  <h4 style={{ color:"rgb(90,90,90)", fontFamily:"cursive"}}>{article.body}</h4>
-                  <div style={{bottom:0, left: 0, position:"absolute",width:"100%", backgroundColor:"rgba(0,0,0,0.1)", display:"flex",flexWrap:"wrap", padding:"8px"}}>
+                  <h3 style={{color:"rgb(60,60,60)", margin: 0}}>{article.title}</h3>
+                  <h6 style={{textAlign:"right", margin:"10px 0", color:"gray"}}>{article.date}</h6>
+                  <h4 style={{ color:"rgb(90,90,90)", lineHeight:"1.4" }}>{article.body}</h4>
+                  <div style={{bottom:0, left: 0, position:"absolute",width:"100%", backgroundColor:"rgba(0,0,0,0.4)", display:"flex",flexWrap:"wrap", padding:"8px"}}>
                     {article.tags.map((tag, key)=>(
                     <h5 key={key} style={{backgroundColor:"rgb(255,255,250)", margin:"2px 5px", padding:"3px 5px", borderRadius:"5px"}}>{tag}</h5>
                     ))}
