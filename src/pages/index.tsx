@@ -21,14 +21,14 @@ const Articles = [
   {
       title: "How I Turned my ADHD Tendencies into my Strengths",
       body: 
-        "There are good days you are so focused and spend the entire day being so productive. However, " +
-        "there are also bad days just being stressed by your tasks and waste your time. " +
-        "How can you make everyday your good day? There are tips to do that.",
+        "There are good days where you are so focused and spend the entire day being so productive. However, " +
+        "there are also bad days where you are just being stressed by your tasks and waste your time. " +
+        "How can you make every day a good day? There are tips to do that.",
       tags: ["ADHD", "productivity", "motivation", "work"],
       date: "3/14/2020"
   },
   {
-      title: "Why I choose not to live in Japan",
+      title: "Why I choose not to live in Japan (People / Culture)",
       body:
         "I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school. " +
         "Last year I graduated university and decided to move to Germany this year. " +
@@ -92,7 +92,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div style={{maxWidth:"1100px", margin:"0 auto"}}>
-        <h2 style={{textAlign:"center", margin:"10px 0", fontFamily:"cursive"}}>PICS</h2>
+        <h2 style={{textAlign:"center", margin:"10px 0"}}>PICS</h2>
         <div style={{display:"flex", flexWrap:"wrap", margin:"20px auto", maxWidth:"1400px", padding: 5}}>
           <div style={imgStyle}>
             <Image2 />
