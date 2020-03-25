@@ -11,33 +11,12 @@ import Image5 from "../components/image5"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faUserCircle, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { Articles } from "./intro"
 
 const iconStyle={margin:"0 6px"}
 const imgStyle={width:"200px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
 const imgStyle2={width:"266px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
 const imgStyle3={width:"128px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
-
-const Articles = [
-  {
-      title: "How I Turned my ADHD Tendencies into my Strengths",
-      body: 
-        "There are good days where you are so focused and spend the entire day being so productive. However, " +
-        "there are also bad days where you are just being stressed by your tasks and waste your time. " +
-        "How can you make every day a good day? There are tips to do that.",
-      tags: ["ADHD", "productivity", "motivation", "work"],
-      date: "3/14/2020"
-  },
-  {
-      title: "Why I choose not to live in Japan (People / Culture)",
-      body:
-        "I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school. " +
-        "Last year I graduated university and decided to move to Germany this year. " +
-        "Before getting to the point I just want to clarify that I love Japan, " +
-        "and it is one of my favorite cities to travel. If I had to stay in Japan I would still enjoy living there.",
-      tags: ["life", "Japan", "Germany", "food", "people"],
-      date: "3/4/2020"
-  }
-]
 
 const IndexPage = () => {
 
