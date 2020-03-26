@@ -5,6 +5,16 @@ export const Articles:{
     date: string
 }[] = [
     {
+      title: "Make your AWS website load faster in 1 minute (S3 / CloudFront)",
+      body:
+        "It's important to save your users' time and data for a better user experience. " +
+        "there are things you can try to make your AWS S3 / CloudFront websites load significantly faster that Amazon doesn't set up for you in the default settings, " +
+        "even if you finished deploying and you don't want to make changes to your project, " +
+        "1. Compress Objects",
+      tags: ["AWS", "S3", "CloudFront", "coding"],
+      date: "3/26/2020"
+    },
+    {
         title: "How I Turned my ADHD Tendencies into my Strengths",
         body: 
           "There are good days where you are so focused and spend the entire day being so productive. However, " +
