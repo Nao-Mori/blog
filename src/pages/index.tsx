@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{display:"flex", flexWrap:"wrap", margin:"0 auto", maxWidth:"1400px", paddingBottom:50}}>
+      <div style={{display:"flex", flexWrap:"wrap", margin:"0 auto", maxWidth:"1600px", paddingBottom:50}}>
         <div style={{width:"240px", margin:"0 auto", padding:"0 10px"}}>
           <div style={{width:"200px", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", margin:"0 auto"}}>
           <Image name = "placeholderImage" />

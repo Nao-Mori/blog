@@ -1,5 +1,6 @@
 .right-block{
-    max-width: 65vw;
+    width: 70vw;
+    max-width: 1300px;
 }
 .article{
     background-color: white;
@@ -10,9 +11,9 @@
     background-color: rgb(255, 245, 208);
 }
 
-@media only screen and (max-width: 550px) {
+@media (max-width: 550px) {
     .right-block{
-        max-width: 100vw;
+        width: 100vw;
     }
 }
 .facebook{

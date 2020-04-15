@@ -7,6 +7,16 @@ const Articles:{
     tags: Array<string>,
     date: string
 }[] = [
+  // {
+  //   title: "Struggle of Being Japanese in Germany",
+  //   body:
+  //     "I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school. " +
+  //     "Last year I graduated university and decided to move to Germany this year. " +
+  //     "Before getting to the point I just want to clarify that I love Japan, " +
+  //     "and it is one of my favorite cities to travel. If I had to stay in Japan I would still enjoy living there.",
+  //   tags: ["life", "Japan", "Germany", "food", "people"],
+  //   date: "4/14/2020"
+  // },
   {
     title: "Make your AWS website load faster in 1 minute (S3 / CloudFront)",
     body:
