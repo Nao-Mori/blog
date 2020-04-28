@@ -40,7 +40,7 @@ const Post = () => (
         <h2>"JOSHIRYOKU"</h2>
           There's a word "Joshiryoku" (女子力) which can be translated to "Girl power".
           It's not about women's empowerment but often about how well you can cook,
-          how many beauty producs you have, how cute you nails are, and everything superficial that makes a girl "Girly".
+          how many beauty producs you have, how cute your nails are, and everything superficial that makes a girl "Girly".
           <br/><br/>
           Being such a well known and iconic word to describe a girl it only started being used a few years ago widely.
           Every time I hear this word I roll my eyes but can't do that anymore because you will hear that from EVERYONE...

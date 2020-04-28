@@ -15,11 +15,11 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1060,
         padding: `1.0rem 1.0875rem`,
       }}
     >
-      <h2 style={{ margin: 0, fontFamily:"Kalam" }}>
+      <h2 style={{ margin: 0, fontFamily:"Kalam", padding:0 }}>
         <Link
           to="/"
           style={{

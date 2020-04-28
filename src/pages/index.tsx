@@ -6,6 +6,7 @@ import Image from "../components/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Intro from "./intro"
+import Profile from "../components/profile"
 
 const imgStyle={width:"200px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
 const imgStyle2={width:"266px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
@@ -16,7 +17,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <div style={{display:"flex", flexWrap:"wrap", margin:"0 auto", maxWidth:"1400px", paddingBottom:50}}>
+
+      <Profile show={true} />
+      <div className="right-block">
         <Intro />
+        </div>
+      </div>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
           <p style={{ height: "30px" }}/>
     <div style={{ display:"flex", flexWrap:"wrap", margin:"20px auto", maxWidth:"1400px", padding: 5 }}>

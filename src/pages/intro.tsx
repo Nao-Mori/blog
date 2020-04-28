@@ -8,7 +8,7 @@ const Articles:{
     date: string
 }[] = [
   {
-    title: "77 Days of Duolingo... Was it waste of time?",
+    title: "77 Days of Duolingo... Was it a waste of time?",
     body: "I moved to Germany this year, and I'm so eager to learn German. I am obsessed with how fast I learn..."+
     "why? Who wants to spend years to learn a language??" +
     "Duolingo is a language learning app that is more of an old school app that is very popular." +
