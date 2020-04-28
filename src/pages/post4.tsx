@@ -77,7 +77,7 @@ const SecondPage = () => {
             However, I really don't think it's a good idea to learn Asian languages due to the fact
             that western languages' subject-action-object kind of structure doesn't translate well to an Asian language
             For example, in Japanese, cutting a sentence into pieces and match every single one of them with an English word isn't easy to do.
-          <h2>Was it waste of time?</h2>
+          <h2>Was it a waste of time?</h2>
             I think not! At least for me. I think you definitely have to incorporate Duolingo with other exercises like 
             watching videos, texting, talking, and ideally, of course, going to school to learn more effectively.
             <br/><br/>
