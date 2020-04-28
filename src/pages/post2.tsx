@@ -1,6 +1,8 @@
 import React from "react"
 import { Wrapper } from "../components/parts"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 const data = {
   title: "How I Turned my ADHD Tendencies into my Strengths",
@@ -8,9 +10,23 @@ const data = {
   date: "3/14/2020"
 }
 
-const SecondPage = () => (
+const SecondPage = () => {
+  const photo = useStaticQuery(graphql`
+    query {
+      img: file(relativePath: { eq: "post2/unnamed.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+    }
+  `)
+  return (
   <Layout>
     <Wrapper data={data} >
+    <Img fluid={photo.img.childImageSharp.fluid} />
+    <br/><br/>
           There are good days where you are so focused and spend the entire day being so productive. However,
           there are also bad days where you are just being stressed by your tasks and waste your time.
           <br/>
@@ -77,6 +93,7 @@ const SecondPage = () => (
           But trust me by doing so you can get out of your state temporarily and it's not that hard to go back to what you were doing afterwards.
     </Wrapper>
   </Layout>
-)
+  )
+}
 
 export default SecondPage

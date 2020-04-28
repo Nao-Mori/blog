@@ -13,7 +13,7 @@ export const Wrapper = props => (
                 <h4 key={key}
                     style={{
                         backgroundColor:"rgb(255,255,250)",
-                        margin:"2px 6px", padding:"3px 9px",
+                        margin:"5px 6px", padding:"3px 9px",
                         borderRadius:"5px",
                         boxShadow:"0px 2px 7px rgb(0,0,0,0.5)"
                     }}

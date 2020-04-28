@@ -55,7 +55,9 @@ const SecondPage = () => {
     <Layout>
       <Wrapper data={data2} >
       <br/>
+      <div style={{ maxWidth:"600px", margin:"0 auto" }}>
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          </div>
           <br/>
           <br/>
           It's important to save your users' time and data for a better user experience. 

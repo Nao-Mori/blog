@@ -9,8 +9,11 @@ const Articles:{
 }[] = [
   {
     title: "77 Days of Duolingo... Was it waste of time?",
-    body: "",
-    tags: ["learning", "language", "Duolingo", "app", "study"],
+    body: "I moved to Germany this year, and I'm so eager to learn German. I am obsessed with how fast I learn..."+
+    "why? Who wants to spend years to learn a language??" +
+    "Duolingo is a language learning app that is more of an old school app that is very popular." +
+    "And it is often criticized for teaching sentences like 'This person eats bread",
+    tags: ["learning", "language", "Duolingo", "app", "study", "German", "English"],
     date: "4/25/2020"
   },
   {
@@ -38,7 +41,7 @@ const Articles:{
         "Last year I graduated university and decided to move to Germany this year. " +
         "Before getting to the point I just want to clarify that I love Japan, " +
         "and it is one of my favorite cities to travel. If I had to stay in Japan I would still enjoy living there.",
-      tags: ["life", "Japan", "Germany", "food", "people"],
+      tags: ["life", "Japan", "culture", "people"],
       date: "3/4/2020"
   }
 ]
@@ -47,7 +50,7 @@ const Intro = () => (
   <div style={{minWidth:"300px", padding:"0 10px", display: "flex", flexWrap:"wrap", width:"100%", maxWidth:"1400px"}}>
     {Articles.map((article, key)=>{
       return (
-        <Link  to={`post${Articles.length - key}`} key={key} style={{color:"black",textDecoration:"none", margin:"20px auto", padding:"0 5px"}}>
+        <Link  to={`post${Articles.length - key}`} key={key} style={{ color:"black",textDecoration:"none", margin:"20px auto", padding:"0 5px" }}>
         <div
           className="article"
           style={{
@@ -67,7 +70,7 @@ const Intro = () => (
           <h4 style={{ color:"rgb(90,90,90)", lineHeight:"1.4" }}>{article.body}</h4>
           <div style={{bottom:0, left: 0, position:"absolute",width:"100%", backgroundColor:"rgba(0,0,0,0.4)", display:"flex",flexWrap:"wrap", padding:"8px"}}>
             {article.tags.map((tag, key)=>(
-            <h5 key={key} style={{backgroundColor:"rgb(255,255,250)", margin:"2px 5px", padding:"3px 5px", borderRadius:"5px"}}>{tag}</h5>
+            <h5 key={key} style={{backgroundColor:"rgb(255,255,250)", margin:"2px 5px", padding:"3px 5px", borderRadius:"3px"}}>{tag}</h5>
             ))}
           </div>
         </div>
