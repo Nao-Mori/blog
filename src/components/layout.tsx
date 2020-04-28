@@ -28,8 +28,11 @@ const Layout = ({ children }) => {
       >
         <Helmet>
           <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet"/>
         </Helmet>
-        <main style={{minHeight:"95vh"}}>{children}</main>
+        <main style={{minHeight:"95vh"}}>
+          {children}
+        </main>
         <footer style={{padding:"20px", backgroundColor:"rgba(0,0,0,0.3)", textAlign:"center"}}>
          <h4 style={{ margin:"0", color: "white" }}>©Nao Mori {new Date().getFullYear()}</h4>
         </footer>

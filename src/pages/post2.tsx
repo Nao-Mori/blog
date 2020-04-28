@@ -1,48 +1,42 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Wrapper } from "../components/parts"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+
+const data = {
+  title: "How I Turned my ADHD Tendencies into my Strengths",
+  tags: ["ADHD", "productivity", "motivation", "work"],
+  date: "3/14/2020"
+}
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="How I Turned my ADHD Tendencies into my Strengths" />
-    <div style={{maxWidth:"750px", margin:"50px auto", padding:"0 15px"}}>
-      <div>
-        <h1 style={{textAlign:"left"}}>How I Turned my ADHD Tendencies<br/> into my Strengths</h1>
-        <h5 style={{textAlign:"right", color:"gray", marginRight:"30px"}}>3/14/2020 by Nao Mori</h5>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
+    <Wrapper data={data} >
           There are good days where you are so focused and spend the entire day being so productive. However,
           there are also bad days where you are just being stressed by your tasks and waste your time.
-          How can you make every day a good day? There are tips to do that.
-        </h4>
-
-        <h2 style={{fontWeight:"bolder"}}>I TUNRED THESE ISSUES...</h2>
-        <h4 style={{fontFamily:"Arial", fontWeight:"normal",lineHeight: 2}}>
+          <br/>
+          <br/>
+        <h2>I TUNRED THESE ISSUES...</h2>
           1. Handling multiple tasks freaks me out and I end up doing nothing.
           <br/>
           2. I suddenly lose concentration and a 'little break' never ends.
           <br/>
           3. When someone talks to me in the middle of something I get bothered.
-        </h4>
         <br/>
-        <h2 style={{fontWeight:"bolder"}}>INTO THESE STRENGTHS!</h2>
-        <h4 style={{fontFamily:"Arial", fontWeight:"normal",lineHeight: 2}}>
+        <br/>
+        <h2>INTO THESE STRENGTHS!</h2>
           1. Be a perfectionist and work efficiently.
           <br/>
           2. Be very focused and also result-focused.
           <br/>
           3. Be a great communicator and more responsible.
-        </h4>
         <br/>
-        <h2 style={{fontWeight:"bolder"}}>HOW DID I DO THAT?</h2>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
+        <br/>
+        <h2>HOW DID I DO THAT?</h2>
           It is always important to think about why I face these problems.<br/>
           After researching and talking to my therapist, here are the solutions that worked for me.
           <br/>
           <br/>
-          <strong style={{fontFamily:"Arial"}}>1: Have deadlines for everything and talk about plans.</strong>
-          <br/>
+          <h2>1. Have deadlines for everything and talk about plans.</h2>
           Issue: Handling multiple tasks freaks me out and I end up doing nothing.
           <br/>
           <br/>
@@ -57,8 +51,7 @@ const SecondPage = () => (
           That will make me realize, that my brain is only overwhelmed by my fantasy.
           <br/>
           <br/>
-          <br/>
-          <strong style={{ fontFamily: "Arial" }}>2: Stay exactly where you are</strong><br/>
+          <h2>2. Stay exactly where you are</h2>
           Issue: Suddenly lose concentration and a 'little break' never ends
           <br/>
           <br/>
@@ -73,9 +66,7 @@ const SecondPage = () => (
           Since I never stop thinking about working this way, I end up going back to work after a few minutes.
           <br/>
           <br/>
-          <br/>
-          <strong style={{ fontFamily: "Arial" }}>3. Tell people to write or use force.</strong>
-          <br/>
+          <h2>3. Tell people to write or use force.</h2>
           Issue: When someone talks to me in the middle of something I freak out and act like I understand what they say.<br/><br/>
           It is really difficult for me to stop what I am doing to listen to someone with focus.
           Even though I look like I'm listening, I'm still thinking about my current task.
@@ -84,10 +75,7 @@ const SecondPage = () => (
           Tell them to write an Email or give them a piece of paper and a pen and tell them to do the same in the future.<br/><br/>
           What if it's an emergency? Kick the chair and stand up. I know it's scary to lose what is in your mind.
           But trust me by doing so you can get out of your state temporarily and it's not that hard to go back to what you were doing afterwards.
-        </h4>
-      </div>
-      <Link to="/">Go back to top</Link>
-    </div>
+    </Wrapper>
   </Layout>
 )
 

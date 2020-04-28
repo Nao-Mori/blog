@@ -7,16 +7,12 @@ const Articles:{
     tags: Array<string>,
     date: string
 }[] = [
-  // {
-  //   title: "Struggle of Being Japanese in Germany",
-  //   body:
-  //     "I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school. " +
-  //     "Last year I graduated university and decided to move to Germany this year. " +
-  //     "Before getting to the point I just want to clarify that I love Japan, " +
-  //     "and it is one of my favorite cities to travel. If I had to stay in Japan I would still enjoy living there.",
-  //   tags: ["life", "Japan", "Germany", "food", "people"],
-  //   date: "4/14/2020"
-  // },
+  {
+    title: "77 Days of Duolingo... Was it waste of time?",
+    body: "",
+    tags: ["learning", "language", "Duolingo", "app", "study"],
+    date: "4/25/2020"
+  },
   {
     title: "Make your AWS website load faster in 1 minute (S3 / CloudFront)",
     body:
@@ -62,11 +58,12 @@ const Intro = () => (
             borderRadius:"5px",
             height:"320px",
             overflow:"hidden",
-            position:"relative"
+            position:"relative",
+            
           }}
         >
-          <h3 style={{color:"rgb(60,60,60)", margin: 0}}>{article.title}</h3>
-          <h6 style={{textAlign:"right", margin:"10px 0", color:"gray"}}>{article.date}</h6>
+          <h3 style={{ color:"rgb(60,60,60)", margin: 0 }}>{article.title}</h3>
+          <h6 style={{ textAlign:"right", margin:"10px 0", color:"gray" }}>{article.date}</h6>
           <h4 style={{ color:"rgb(90,90,90)", lineHeight:"1.4" }}>{article.body}</h4>
           <div style={{bottom:0, left: 0, position:"absolute",width:"100%", backgroundColor:"rgba(0,0,0,0.4)", display:"flex",flexWrap:"wrap", padding:"8px"}}>
             {article.tags.map((tag, key)=>(

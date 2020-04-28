@@ -25,7 +25,7 @@ const IndexPage = () => {
           </div>
           <h2 style={{textAlign:"center", margin:"10px", fontWeight:"bolder"}}>nao mori</h2>
           <h5 style={{textAlign:"center", color:"gray", margin:"0 0 15px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Leverkusen</h5>
-          <h4 style={{marginLeft:"10px", fontFamily:"Kalam" }}>Hello, I'm a software developer. I'm taking notes on things I learned hoping others find them interesting too!</h4>
+          <h5 style={{marginLeft:"11px", fontFamily:"Kalam" }}>Hello, I'm a software developer. I'm taking notes on things I learned hoping others find them interesting too!</h5>
           <a className="facebook" href="https://www.facebook.com/profile.php?id=100012798553121"><FontAwesomeIcon icon={faFacebook} size="2x" style={iconStyle} /></a>
           <a className="facebook" href="https://github.com/nao-mori"><FontAwesomeIcon icon={faGithub} size="2x" style={iconStyle} /></a>
           <a className="facebook" href="https://www.linkedin.com/in/nao-mori/"><FontAwesomeIcon icon={faLinkedin} size="2x" style={iconStyle} /></a>

@@ -1,19 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Wrapper } from "../components/parts"
+
+const data = {
+  title: "Why I choose not to live in Japan (People / Culture)",
+  tags: ["people", "culture", "Japan", "life"],
+  date: "3/4/2020",
+}
 
 const Post = () => (
   <Layout>
-    <SEO title="Why I choose not to live in Japan" />
-    <div style={{maxWidth:"750px", margin:"50px auto", padding:"0 15px"}}>
-      <div>
-        <h1>Why I choose not to live in Japan (People / Culture)</h1>
-        <h5 style={{textAlign:"right", color:"gray", marginRight:"30px"}}>3/4/2020 by Nao Mori</h5>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
-          I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school.
-          Last year I graduated university and decided to move to Germany this year.
+    <Wrapper data={data} >
+        I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school.
+        Last year I graduated university and decided to move to Germany this year.
         <br/><br/>
         Before getting to the point I just want to clarify that I love Japan,
         and it is one of my favorite countries to travel.
@@ -21,9 +20,8 @@ const Post = () => (
         <br/><br/>
         Points that will be made are only based on my personal experiences and opinions.
         And I will compare Japan to Germany a bit.
-        </h4>
+        <br/><br/>
         <h2>GIRLS' WORLD</h2>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
           Living my college life, I have always felt the pressure that I have to at least try to look better especially as a girl.
           Don't get me wrong I love makeup and fashion. But I wear makeup or dress up nice when I want to.
           <br/>
@@ -38,18 +36,16 @@ const Post = () => (
           <br/>
           Many of them have a hard time understanding a girl like me that's very inconsistent on her looks.
           It's freeing to see girls dressed up very casually in shopping malls over here in Germany.
-        </h4>
+          <br/><br/>
         <h2>"JOSHIRYOKU"</h2>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
           There's a word "Joshiryoku" (女子力) which can be translated to "Girl power".
           It's not about women's empowerment but often about how well you can cook,
           how many beauty producs you have, how cute you nails are, and everything superficial that makes a girl "Girly".
           <br/><br/>
           Being such a well known and iconic word to describe a girl it only started being used a few years ago widely.
           Every time I hear this word I roll my eyes but can't do that anymore because you will hear that from EVERYONE...
-        </h4>
+          <br/><br/>
         <h2>FAKENESS</h2>
-        <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
           It is hard to make real friends in Japan.
           I had so many people saying "We should have to hang out soon". 
           90% of them never contacted me.
@@ -65,10 +61,7 @@ const Post = () => (
           because it is not lightly used.
           If you tell them "Let's hang out soon" and they do NOT want to hang out with you, they often won't simply respond to you.
           Which is still better than "Sorry I'm busy, maybe next time!" which leads you to waste more energy.
-        </h4>
-      </div>
-      <Link to="/">Go back to top</Link>
-    </div>
+      </Wrapper>
   </Layout>
 )
 

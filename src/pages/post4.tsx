@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-//import Img from "gatsby-image"
-//import { useStaticQuery, graphql } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Wrapper } from "../components/parts"
 
-const tags = ["learning", "language", "Duolingo", "app", "study"]
+const data = {
+  title: "77 Days of Duolingo... Was it waste of time?",
+  tags: ["learning", "language", "Duolingo", "app", "study"],
+  date: "4/26/2020"
+}
 
 const SecondPage = () => {
   // const data = useStaticQuery(graphql`
@@ -23,16 +23,7 @@ const SecondPage = () => {
 
   return(
     <Layout>
-      <SEO title="77 Days of Duolingo... Was it waste of time?" />
-      <div style={{maxWidth:"750px", margin:"50px auto", padding:"0 15px"}}>
-        <div>
-          <h1 style={{textAlign:"left"}}>77 Days of Duolingo... Was it waste of time?</h1>
-          <h5 style={{textAlign:"right", color:"gray", marginRight:"30px"}}>4/27/2020 by Nao Mori</h5>
-          <div style={{ width:"100%", backgroundColor:"rgba(0,0,0,0.4)", display:"flex", flexWrap:"wrap", padding:"8px" }}>
-            {tags.map((tag, key)=>(
-              <h5 key={key} style={{backgroundColor:"rgb(255,255,250)", margin:"2px 5px", padding:"3px 5px", borderRadius:"5px"}}>{tag}</h5>
-            ))}
-          </div>
+      <Wrapper data ={data} >
           <h2>Motivation</h2>
           I move to Germany this year, and I'm so eager to learn German and obsessed with how fast I learn. 
 
@@ -71,12 +62,7 @@ const SecondPage = () => {
             So the next step for me will be talking to native speakers and watch YouTube videos which I'm very excited about.
             I'll update my German learning sometime in the future, bye!
           <br/>
-          <h4 style={{fontWeight:"normal", fontFamily:"Arial", lineHeight: 1.5}}>
-            
-          </h4>
-        </div>
-        <Link to="/">Go back to top</Link>
-      </div>
+      </Wrapper>
     </Layout>
   )
 }
