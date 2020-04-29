@@ -48,7 +48,6 @@ const SecondPage = () => {
           It is always important to think about why I face these problems.<br/>
           After researching and talking to my therapist, here are the solutions that worked for me.
           <br/>
-          <br/>
           <h2>1. Have deadlines for everything and talk about plans.</h2>
           Issue: Handling multiple tasks freaks me out and I end up doing nothing.
           <br/>

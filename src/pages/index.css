@@ -11,7 +11,7 @@
     background-color: rgb(255, 245, 208);
 }
 
-@media (max-width: 857px) {
+@media (max-width: 900px) {
     .profile{
         display: none;
     }

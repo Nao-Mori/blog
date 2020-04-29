@@ -36,7 +36,7 @@ const IndexPage = () => {
       </div>
       <div style={imgStyle2}>
         <Image name = "Image4" />
-        <h6 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Mejiro University (Tokyo)</h6>
+        <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Tokyo</h5>
       </div>
       
       <div style={imgStyle3}>

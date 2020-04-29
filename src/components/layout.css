@@ -112,6 +112,7 @@ select,
 textarea {
   font: inherit;
   margin: 0;
+  padding: 3px 8px;
 }
 optgroup {
   font-weight: 700;
@@ -123,6 +124,25 @@ input {
 button,
 select {
   text-transform: none;
+}
+button {
+  background-color: rgb(78, 81, 117); 
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+button:focus{
+  outline: none;
+}
+button:hover{
+  color: rgb(46, 46, 46);
+  background-color: white;
 }
 [type="reset"],
 [type="submit"],
