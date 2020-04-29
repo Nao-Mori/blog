@@ -8,12 +8,11 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Intro from "./intro"
 import Profile from "../components/profile"
 
-const imgStyle={width:"200px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
-const imgStyle2={width:"266px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
-const imgStyle3={width:"128px", margin:"5px auto", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white"}
+const imgStyle = { width:"200px", maxWidth:"40%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
+const imgStyle2 = { width:"266px", maxWidth:"54%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
+const imgStyle3 = { width:"128px", maxWidth:"26%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
 
 const IndexPage = () => {
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -26,23 +25,23 @@ const IndexPage = () => {
       </div>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
           <p style={{ height: "30px" }}/>
-    <div style={{ display:"flex", flexWrap:"wrap", margin:"20px auto", maxWidth:"1400px", padding: 5 }}>
+    <div style={{ display:"flex", flexWrap:"wrap", margin:"20px auto", maxWidth:"1400px", padding: 5, justifyContent:"center", width:"100%" }}>
       <div style={imgStyle}>
-        <Image name = "placeholderImage2" />
+        <Image name = "Image2" />
         <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
       </div>
       <div style={imgStyle}>
-        <Image name = "placeholderImage3" />
+        <Image name = "Image3" />
         <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
       </div>
       <div style={imgStyle2}>
-        <Image name = "placeholderImage4" />
+        <Image name = "Image4" />
         <h6 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Mejiro University (Tokyo)</h6>
       </div>
       
       <div style={imgStyle3}>
-        <Image name = "placeholderImage5" />
-        <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Los Angeles</h5>
+        <Image name = "Image5" />
+        <h6 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Los Angeles</h6>
       </div>
     </div>
   </div>

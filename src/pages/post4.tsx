@@ -40,7 +40,7 @@ const SecondPage = () => {
           OK, let's see how it went.
           <h2>Good's</h2>
           <h3>・Grammar / Vocabulary</h3>
-            It's really good for begginers to understand basic grammar and achive vocabulary including some advanced words and sentence structures
+            Duolingo is really good for begginers to understand basic grammar and achive vocabulary including some advanced words and sentence structures
             like "I would have done it if...".
             It doesn't necessarily teach you grammar in details like teachers do, however, having to see hundreds of examples, you will have a
             decent idea about grammar which is very important when learning languages.
@@ -49,7 +49,7 @@ const SecondPage = () => {
             <br/>
             <br/>
             <h3>・Free but still good</h3>
-            And it's totally effective without spending any money.
+            Duolingo is totally effective without spending any money.
             Even though making 5 mistakes stops you progress a course, which didn't happen to me offen, by playing "practice mode" which is basically the same as taking a course
             will get you back to your course.
             <br/>
@@ -68,7 +68,7 @@ const SecondPage = () => {
             <br/>
             <br/>
             <h3>・Glitchy ads</h3>
-            There's some technical issues like some of the adds pause automatically to force you interact with the advertised app.
+            There's some technical issues like some of the ads pause automatically to force you interact with the advertised app.
             (probably not Duolingo's fault) and sometimes ads did't show properly and I had to restart the app.
             <br/>
             <br/>

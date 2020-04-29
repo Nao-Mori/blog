@@ -25,11 +25,10 @@ const SecondPage = () => {
   return (
   <Layout>
     <Wrapper data={data} >
-    <Img fluid={photo.img.childImageSharp.fluid} />
-    <br/><br/>
+      <Img fluid={photo.img.childImageSharp.fluid} />
+        <br/>
           There are good days where you are so focused and spend the entire day being so productive. However,
           there are also bad days where you are just being stressed by your tasks and waste your time.
-          <br/>
           <br/>
         <h2>I TUNRED THESE ISSUES...</h2>
           1. Handling multiple tasks freaks me out and I end up doing nothing.
@@ -38,14 +37,12 @@ const SecondPage = () => {
           <br/>
           3. When someone talks to me in the middle of something I get bothered.
         <br/>
-        <br/>
         <h2>INTO THESE STRENGTHS!</h2>
           1. Be a perfectionist and work efficiently.
           <br/>
           2. Be very focused and also result-focused.
           <br/>
           3. Be a great communicator and more responsible.
-        <br/>
         <br/>
         <h2>HOW DID I DO THAT?</h2>
           It is always important to think about why I face these problems.<br/>
@@ -66,7 +63,6 @@ const SecondPage = () => {
           I tell my co-workers, friends or family about it and how I think I will be dealing with it in details.
           That will make me realize, that my brain is only overwhelmed by my fantasy.
           <br/>
-          <br/>
           <h2>2. Stay exactly where you are</h2>
           Issue: Suddenly lose concentration and a 'little break' never ends
           <br/>
@@ -80,7 +76,6 @@ const SecondPage = () => {
           Then I can put my phone on the desk and do whatever I want to do.
           (I don't recommend to use the same laptop you work with to have a little break)<br/><br/>
           Since I never stop thinking about working this way, I end up going back to work after a few minutes.
-          <br/>
           <br/>
           <h2>3. Tell people to write or use force.</h2>
           Issue: When someone talks to me in the middle of something I freak out and act like I understand what they say.<br/><br/>

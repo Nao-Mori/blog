@@ -6,28 +6,35 @@ import Img from "gatsby-image"
 const Image = ({name}) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage2: file(relativePath: { eq: "pic7.jpg" }) {
+      icon: file(relativePath: { eq: "icon.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 50) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      Image2: file(relativePath: { eq: "pic7.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      placeholderImage3: file(relativePath: { eq: "pic4.jpg" }) {
+      Image3: file(relativePath: { eq: "pic4.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      placeholderImage4: file(relativePath: { eq: "pic5.jpg" }) {
+      Image4: file(relativePath: { eq: "pic5.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      placeholderImage5: file(relativePath: { eq: "pic6.jpg" }) {
+      Image5: file(relativePath: { eq: "pic6.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

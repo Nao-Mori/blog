@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Wrapper } from "../components/parts"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 const data = {
   title: "Why I choose not to live in Japan (People / Culture)",
@@ -8,9 +10,23 @@ const data = {
   date: "3/4/2020",
 }
 
-const Post = () => (
+const Post = () => {
+  const photo = useStaticQuery(graphql`
+    query {
+      img: file(relativePath: { eq: "post2/bird.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+    }
+  `)
+  return (
   <Layout>
     <Wrapper data={data} >
+      <Img fluid={photo.img.childImageSharp.fluid} />
+      <br/>
         I was born in Kyoto (Japan) and moved to Tokyo (Japan) as I entered a high school.
         Last year I graduated university and decided to move to Germany this year.
         <br/><br/>
@@ -20,7 +36,7 @@ const Post = () => (
         <br/><br/>
         Points that will be made are only based on my personal experiences and opinions.
         And I will compare Japan to Germany a bit.
-        <br/><br/>
+        <br/>
         <h2>GIRLS' WORLD</h2>
           Living my college life, I have always felt the pressure that I have to at least try to look better especially as a girl.
           Don't get me wrong I love makeup and fashion. But I wear makeup or dress up nice when I want to.
@@ -36,7 +52,7 @@ const Post = () => (
           <br/>
           Many of them have a hard time understanding a girl like me that's very inconsistent on her looks.
           It's freeing to see girls dressed up very casually in shopping malls over here in Germany.
-          <br/><br/>
+          <br/>
         <h2>"JOSHIRYOKU"</h2>
           There's a word "Joshiryoku" (女子力) which can be translated to "Girl power".
           It's not about women's empowerment but often about how well you can cook,
@@ -44,7 +60,7 @@ const Post = () => (
           <br/><br/>
           Being such a well known and iconic word to describe a girl it only started being used a few years ago widely.
           Every time I hear this word I roll my eyes but can't do that anymore because you will hear that from EVERYONE...
-          <br/><br/>
+          <br/>
         <h2>FAKENESS</h2>
           It is hard to make real friends in Japan.
           I had so many people saying "We should have to hang out soon". 
@@ -63,6 +79,7 @@ const Post = () => (
           Which is still better than "Sorry I'm busy, maybe next time!" which leads you to waste more energy.
       </Wrapper>
   </Layout>
-)
+  )
+}
 
 export default Post

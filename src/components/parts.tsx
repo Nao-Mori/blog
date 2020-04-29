@@ -9,8 +9,8 @@ export const Wrapper = props => (
         <div style={{display:"flex", flexWrap:"wrap", margin:"0 auto", maxWidth:"1400px", paddingBottom:50}}>
 
           <Profile show={false}/>
-          <div style={{margin:"0 auto"}} className="right-block">
-            <div style={{maxWidth:"800px", margin:"40px auto", padding:"0 15px"}}>
+          <div style={{ margin:"0 auto" }} className="right-block">
+            <div style={{ maxWidth:"900px", margin:"40px auto", padding:"0 15px" }}>
             <h1>{props.data.title}</h1>
             
             <div style={{ width:"100%", display:"flex", flexWrap:"wrap", padding:"8px" }}>
