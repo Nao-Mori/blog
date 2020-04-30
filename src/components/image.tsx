@@ -13,6 +13,20 @@ const Image = ({name}) => {
           }
         }
       },
+      Image: file(relativePath: { eq: "pic.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      Image1: file(relativePath: { eq: "pic3.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
       Image2: file(relativePath: { eq: "pic7.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {

@@ -11,6 +11,7 @@ import Profile from "../components/profile"
 const imgStyle = { width:"200px", maxWidth:"40%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
 const imgStyle2 = { width:"266px", maxWidth:"54%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
 const imgStyle3 = { width:"128px", maxWidth:"26%", boxShadow:"5px 10px 10px rgba(0,0,0,0.4)", backgroundColor:"white", margin: "10px" }
+const imgContainer = { color: "rgb(60,60,60)", margin:"5px 0" }
 
 const IndexPage = () => {
   return (
@@ -23,28 +24,37 @@ const IndexPage = () => {
         <Intro />
         </div>
       </div>
-        <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
           <p style={{ height: "30px" }}/>
-    <div style={{ display:"flex", flexWrap:"wrap", margin:"20px auto", maxWidth:"1400px", padding: 5, justifyContent:"center", width:"100%" }}>
-      <div style={imgStyle}>
-        <Image name = "Image2" />
-        <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
-      </div>
-      <div style={imgStyle}>
-        <Image name = "Image3" />
-        <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
-      </div>
-      <div style={imgStyle2}>
-        <Image name = "Image4" />
-        <h5 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Tokyo</h5>
-      </div>
-      
-      <div style={imgStyle3}>
-        <Image name = "Image5" />
-        <h6 style={{textAlign:"center", color:"rgb(60,60,60)", margin:"5px 0"}}><FontAwesomeIcon icon={faMapMarkerAlt} /> Los Angeles</h6>
-      </div>
-    </div>
-  </div>
+          <div className="image-box"
+           style={{ display:"flex", flexWrap:"wrap", margin:"20px auto", padding: 5, justifyContent:"center", width:"100%", textAlign: "center" }}
+          >
+            <div style={imgStyle}>
+              <Image name = "Image2" />
+              <h5 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
+            </div>
+            <div style={imgStyle}>
+              <Image name = "Image3" />
+              <h5 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> New York</h5>
+            </div>
+            <div style={imgStyle}>
+              <Image name = "Image1" />
+              <h5 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> London</h5>
+            </div>
+            <div style={imgStyle}>
+              <Image name = "Image" />
+              <h5 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> Cologne</h5>
+            </div>
+            <div style={imgStyle2}>
+              <Image name = "Image4" />
+              <h5 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> Tokyo</h5>
+            </div>
+            
+            <div style={imgStyle3}>
+              <Image name = "Image5" />
+              <h6 style={imgContainer}><FontAwesomeIcon icon={faMapMarkerAlt} /> Los Angeles</h6>
+            </div>
+            
+          </div>
     </Layout>
   )
 }

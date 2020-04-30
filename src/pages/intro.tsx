@@ -8,6 +8,12 @@ const Articles:{
     date: string
 }[] = [
   {
+    title: "How I learned English in One Year",
+    body: "",
+    tags: [],
+    date: "5/2/2020"
+  },
+  {
     title: "77 Days of Duolingo... Was it a waste of time?",
     body: "I moved to Germany this year, and I'm so eager to learn German. I am obsessed with how fast I learn... "+
     "why? Who wants to spend years to learn a language?? " +
@@ -47,10 +53,10 @@ const Articles:{
 ]
 
 const Intro = () => (
-  <div style={{minWidth:"300px", padding:"0 10px", display: "flex", flexWrap:"wrap", width:"100%", maxWidth:"1400px"}}>
+  <div style={{ minWidth:"300px", padding:"0 10px", display: "flex", flexWrap:"wrap", width:"100%", maxWidth:"1400px", justifyContent:"center" }}>
     {Articles.map((article, key)=>{
       return (
-        <Link  to={`post${Articles.length - key}`} key={key} style={{ color:"black",textDecoration:"none", margin:"20px auto", padding:"0 5px" }}>
+        <Link  to={`post${Articles.length - key}`} key={key} style={{ color:"black", textDecoration:"none", margin:"10px 5px", padding:"0 5px" }}>
         <div
           className="article"
           style={{
@@ -62,7 +68,6 @@ const Intro = () => (
             height:"320px",
             overflow:"hidden",
             position:"relative",
-            
           }}
         >
           <h3 style={{ color:"rgb(60,60,60)", margin: 0 }}>{article.title}</h3>
