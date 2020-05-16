@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import { Wrapper } from "../components/parts"
+import { Wrapper, Code } from "../components/parts"
 import Layout from "../components/layout"
 
 const data2 = {
@@ -86,7 +86,7 @@ const SecondPage = () => {
           Copy and paste the configuration below into the editor and click on "Save".
           <br/>
           <br/>
-          <h5 style={{ backgroundColor: "rgb(50,50,50)", color: "white", fontWeight: "normal", padding: "10px", lineHeight: 1.5, margin:0 }}>
+          <Code>
           {'<?xml version="1.0" encoding="UTF-8"?>'}<br/>
           {'<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">'}<br/>
           {"<CORSRule>"}<br/>
@@ -97,7 +97,7 @@ const SecondPage = () => {
           {"<AllowedHeader>Content-Length</AllowedHeader>"}<br/>
           {"</CORSRule>"}<br/>
           {"</CORSConfiguration>"}<br/>
-          </h5>
+          </Code>
           <br/>
           Now your script files should be compressed.
           <br/>

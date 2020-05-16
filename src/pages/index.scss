@@ -1,4 +1,6 @@
-.right-block{
+$primary-color: #333;
+
+.right-block {
     width: 70vw;
     max-width: 1100px;
 }
@@ -6,9 +8,9 @@
     background-color: white;
     cursor: pointer;
     transition: background-color 0.5s;
-}
-.article:hover{
-    background-color: rgb(255, 245, 208);
+    &:hover{
+        background-color: rgb(255, 245, 208);
+    }
 }
 
 @media (max-width: 1350px) {
@@ -26,16 +28,19 @@
         padding: 0 5px;
     }
 }
+
 .facebook{
-    color:rgb(88, 88, 88)
+    color:rgb(88, 88, 88);
+
+    &:hover{
+        color: rgb(52, 52, 199);
+    }
 }
 
-.facebook:hover{
-    color: rgb(52, 52, 199);
-}
 .website{
-    color:gray
-}
-.website:hover{
-    color: pink
+    color:gray;
+
+    &:hover{
+        color: pink
+    }
 }

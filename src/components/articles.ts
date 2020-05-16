@@ -1,17 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-
-const Articles:{ 
+export const Articles:{ 
     title: string,
     body: string,
     tags: Array<string>,
     date: string
 }[] = [
   {
-    title: "How I learned English in One Year",
-    body: "",
-    tags: [],
-    date: "5/2/2020"
+    title: "Simplest Way to Achieve Blurry Loading Images on your React App without any Libraries",
+    body: "When providing high quality images to users especially the ones with slower internet, " +
+    "it's important to tell them that images are being loaded. So I'm gonna share how to display blurry images while loading the actual images " +
+    "on React app withou any plugins / libraries just like I did in ",
+    tags: ["react","react hooks","image","loading","UX"],
+    date: "5/15/2020"
   },
   {
     title: "77 Days of Duolingo... Was it a waste of time?",
@@ -51,38 +50,3 @@ const Articles:{
       date: "3/4/2020"
   }
 ]
-
-const Intro = () => (
-  <div style={{ minWidth:"300px", padding:"0 10px", display: "flex", flexWrap:"wrap", width:"100%", maxWidth:"1400px", justifyContent:"center" }}>
-    {Articles.map((article, key)=>{
-      return (
-        <Link  to={`post${Articles.length - key}`} key={key} style={{ color:"black", textDecoration:"none", margin:"10px 5px", padding:"0 5px" }}>
-        <div
-          className="article"
-          style={{
-            maxWidth:"330px",
-            minWidth:"250px",
-            boxShadow:"5px 10px 10px rgba(0,0,0,0.4)",
-            padding:"20px",
-            borderRadius:"5px",
-            height:"320px",
-            overflow:"hidden",
-            position:"relative",
-          }}
-        >
-          <h3 style={{ color:"rgb(60,60,60)", margin: 0 }}>{article.title}</h3>
-          <h6 style={{ textAlign:"right", margin:"10px 0", color:"gray" }}>{article.date}</h6>
-          <h4 style={{ color:"rgb(90,90,90)", lineHeight:"1.4" }}>{article.body}</h4>
-          <div style={{bottom:0, left: 0, position:"absolute",width:"100%", backgroundColor:"rgba(0,0,0,0.4)", display:"flex",flexWrap:"wrap", padding:"8px"}}>
-            {article.tags.map((tag, key)=>(
-            <h5 key={key} style={{backgroundColor:"rgb(255,255,250)", margin:"2px 5px", padding:"3px 5px", borderRadius:"3px"}}>{tag}</h5>
-            ))}
-          </div>
-        </div>
-        </Link>
-      )
-    })}
-  </div>
-)
-
-export default Intro

@@ -50,8 +50,7 @@ export const Wrapper = props => {
                 ))}
             </div>
             <h5 style={{textAlign:"right", color:"gray", marginRight:"30px"}}>{props.data.date} by Nao Mori</h5>
-            <h4>{props.children}</h4>
-        
+            <div className="text">{props.children}</div>
             <br/>
             {sent?
             <div style={{ background: "white", boxShadow:"0 0 10px rgba(0,0,0,0.1)", padding:"20px"}}>
@@ -75,5 +74,13 @@ export const Wrapper = props => {
         </div>
         </div>
     </>
+    )
+}
+
+export const Code = ({ children }) => {
+    return(
+        <div style={{ overflow: "auto", background: "rgb(50,50,50)", color: "white", borderRadius: "10px", padding:"10px 15px", whiteSpace: "nowrap" }}>
+            {children}
+        </div>
     )
 }

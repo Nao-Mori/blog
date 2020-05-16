@@ -7,7 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Manrope', sans-serif;
+  background: linear-gradient(0.25turn, #e5eaec, #ffffff, #e7e0da);
 }
+
 article,
 aside,
 details,
@@ -253,7 +255,7 @@ h1 {
   font-weight: 900;
   text-rendering: optimizeLegibility;
   font-size: 2.45rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 h2 {
   margin-left: 0;
@@ -285,7 +287,7 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 h4 {
   margin-left: 0;
@@ -389,7 +391,7 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-p {
+.text {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -398,6 +400,12 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 figure {
   margin-left: 0;
@@ -631,5 +639,11 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 80%;
   }
 }
