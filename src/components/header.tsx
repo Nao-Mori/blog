@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          Nao got her blog <strong style={{textDecoration: "line-through"}}>did</strong> done...
+          {siteTitle}
         </Link>
       </h2>
     </div>
